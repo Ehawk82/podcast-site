@@ -1,0 +1,136 @@
+/* DOM */
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background: black;
+}
+
+section {
+	background-color: rgba(30,30,30,1);
+	position: absolute;
+	top:0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1;	
+	overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding: 5px 0;
+	background-color: rgba(160,160,160,.9);
+	margin: 0;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.4);
+}
+/* CLASS */
+.navs {
+	position: fixed;
+	background-color: rgba(155,155,155,.5);
+	top:40vh;
+	line-height:20vh;
+	width:5vw;
+	text-align: center;
+	opacity: .5;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.navs_locked {
+	position: fixed;
+	background-color: rgba(255,255,255,.4);
+	top:40vh;
+	line-height:20vh;
+	width:5vw;
+	text-align: center;
+	opacity: .05;
+	cursor: default;
+	z-index: 5;
+}
+
+.navs:hover {
+	opacity: .7;
+}
+
+.page_full {
+	left:0;
+}
+.page_right {
+	left:200vw;
+}
+.page_left {
+	left:-200vw;
+}
+/* ID */
+
+#navL {
+	left:0;
+}
+
+#navR {
+	right:0;
+}
+#page0 {
+	background-image: url("../assets/blo.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#leftPanel {
+	height: 80vh;
+	width: 40vw;
+	float:left;
+	margin:10vh 0 0 5vw;
+
+}
+#leftPanel,#rightTopPanel,#rightMiddlePanel,#rightBottomPanel {
+	background-color: rgba(100,100,100,.5);
+	box-shadow: 0 0 2px white inset,0 0 2px white inset,0 0 2px white inset;
+}
+#rightTopPanel,#rightMiddlePanel,#rightBottomPanel {
+	width:40vw;
+	height: 20vh;
+	float: right;
+	margin:10vh 5vw 0 0;
+}
+
+/* MULTI STACK */
+.page_full,.page_right,.page_left {
+	position: absolute;
+	background-color: black;
+	top:0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+	box-shadow: 0 0 2px inset silver;
+}
+
+.page_full,.page_right,.page_left{
+	transition: 666ms all ease-in-out;
+}
+/* MEDIA QUERY */
+
+/* phones, 600px & > */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* tablets(portrait), phones, 600px & < */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* tablets(landscape), 768px & <) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* laptops,desktops, 992px & < */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* laptops,desktops, 1200px & <) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,116 @@
+var myUI, pageContent;
+
+pageContent = [
+	"<div><div id='leftPanel'><h1>NEWS FEED</h1></div><div id='rightTopPanel'><h3>ARTICLES</h3></div><div id='rightMiddlePanel'><h3>JOKES</h3></div><div id='rightBottomPanel'><h3>PORTAL</h3></div></div>",
+	"media library",
+	"extras",
+	"credits",
+];
+
+myUI = {
+	makeRight: function(x){return x.className = x.className + "_right" },
+    takeRight: function(x){ var y,z; return y = x.className.split('_right'), z = y[0], x.className = z },
+    makeLeft: function(x){return x.className = x.className + "_left" },
+    takeLeft: function(x){ var y,z; return y = x.className.split('_left'), z = y[0], x.className = z },
+	init: function(){
+		myUI.load();
+	},
+	load: function(){
+		var container = createEle("div"),
+		    navR = createEle("div"),
+		    navL = createEle("div"),
+		    section = createEle("section"), pages = 4, currentPage = 0;
+
+		LSinit("currentPage", currentPage);
+        saveLS("currentPage", currentPage);
+		for (var i = 0; i < pages; i++) {
+			var page = createEle("div");
+
+			page.id = "page" + i;
+			page.className = "page_right";
+		    
+
+			if(i === 0){
+				page.className = "page_full";
+				
+			}
+
+			section.append(page);
+			page.innerHTML = pageContent[i];
+		}
+
+		navR.innerHTML = "▶";
+		navR.id = "navR";
+		navR.className = "navs";
+		navR.onclick = myUI.navRight(navL,navR);
+
+		navL.innerHTML = "◀";
+		navL.className = "navs";
+		navL.id = "navL";
+		makeLock(navL);
+		navL.onclick = myUI.navLeft(navL,navR);
+
+		container.append(navL,navR,section);
+
+		body.append(container);
+	},
+	navLeft: function(navL,navR){
+		return function(){
+			var currentPage = parseLS("currentPage");
+
+			if(currentPage > 0) {
+				var thisPage = bySel("#page" + currentPage);
+				takeFull(thisPage);
+				myUI.makeRight(thisPage);
+				currentPage--;
+				saveLS("currentPage",currentPage);
+				var nextPage = bySel("#page" + currentPage);
+				myUI.takeLeft(nextPage);
+				makeFull(nextPage);
+
+				if(currentPage === 3) {
+					makeLock(navR);
+				} else {
+					takeLock(navR);
+				}
+				if(currentPage < 1){
+				    makeLock(navL);
+				} else {
+					takeLock(navL);
+				}
+
+			}
+		}
+	},
+	navRight: function(navL,navR){
+		return function(){
+			var currentPage = parseLS("currentPage");
+			if(currentPage < 3) {
+				var thisPage = bySel("#page" + currentPage);
+				takeFull(thisPage);
+				myUI.makeLeft(thisPage);
+				currentPage++;
+				saveLS("currentPage",currentPage);
+				var nextPage = bySel("#page" + currentPage);
+				myUI.takeRight(nextPage);
+				makeFull(nextPage);
+			
+				if(currentPage > 0) {
+					takeLock(navL);
+				} else {
+					makeLock(navL);
+				}
+				if(currentPage === 3){
+				    makeLock(navR);
+				} else {
+					takeLock(navR);
+				}
+				
+			}
+		}
+	}
+};
+
+window.onload = function(){
+		myUI.init();
+}
