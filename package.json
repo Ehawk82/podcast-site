@@ -1,6 +1,6 @@
 {
   "name": "podcast-site",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a markup to house podcasts",
   "main": "index.js",
   "scripts": {
