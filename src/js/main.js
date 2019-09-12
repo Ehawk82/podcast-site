@@ -1,10 +1,11 @@
 var myUI, pageContent;
 
+
 pageContent = [
-	"<div><div id='leftPanel'><h1>NEWS FEED</h1></div><div id='rightTopPanel'><h3>ARTICLES</h3></div><div id='rightMiddlePanel'><h3>JOKES</h3></div><div id='rightBottomPanel'><h3>PORTAL</h3></div></div>",
-	"media library",
-	"extras",
-	"credits",
+	"<div><div id='leftPanel'><h1>NEWS FEED</h1><div>" + newsFeed + "</div></div><div id='rightTopPanel'><h3>LINKS</h3><div>" + links + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + joke + "</div></div><div id='rightBottomPanel'><h3>PORTAL</h3><div>" + portal + "</div></div></div>",
+	"<div><div id='leftPanel'><h1>IMAGES</h1><div>" + images + "</div></div><div id='leftPanel'><h1>VIDEOS</h1><div>" + videos + "</div></div>",
+	"",
+	""
 ];
 
 myUI = {
@@ -19,7 +20,8 @@ myUI = {
 		var container = createEle("div"),
 		    navR = createEle("div"),
 		    navL = createEle("div"),
-		    section = createEle("section"), pages = 4, currentPage = 0;
+		    section = createEle("section"), pages = 4, currentPage = 0,
+		    footer = createEle("footer");
 
 		LSinit("currentPage", currentPage);
         saveLS("currentPage", currentPage);
@@ -50,7 +52,9 @@ myUI = {
 		makeLock(navL);
 		navL.onclick = myUI.navLeft(navL,navR);
 
-		container.append(navL,navR,section);
+		footer.innerHTML = "Ehawk LLC &copy; 2020";
+
+		container.append(navL,navR,section,footer);
 
 		body.append(container);
 	},

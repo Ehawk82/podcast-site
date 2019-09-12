@@ -3,39 +3,70 @@ body {
   padding: 0;
   margin: 0;
   color: white;
-  background: black;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
 section {
-	background-color: rgba(30,30,30,1);
 	position: absolute;
+	
 	top:0;
 	height: 100vh;
 	width: 100vw;
 	z-index: 1;	
 	overflow: hidden;
+	background-color: black; 
+  	background-image: radial-gradient(rgba(80,80,80,1), rgba(40,40,40,1), rgba(20,20,20,1), rgba(10,10,10,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1)); 
 }
 h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 	border-bottom: 1px solid black;
 	padding: 5px 0;
 	background-color: rgba(160,160,160,.9);
-	margin: 0;
-	text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+	margin: 0 2px;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
 	color:rgba(220,220,220,1);
+	cursor: default;
+}
+footer {
+	position: absolute;
+	background-color: black;
+	bottom:0;
+	right:0;
+	width:100vw;
+	color: rgba(50,50,50,.8);
+    box-shadow:0px -30px 30px 30px #000000;
+	font-size: 2vh;
+	z-index: 1;
+	text-align: right; 
+}
+::selection { 
+	color:rgba(220,220,220,1);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(160,160,160,.9);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160,160,160,.9);
 }
 /* CLASS */
 .navs {
 	position: fixed;
 	background-color: rgba(0,0,0,0);
-	top:10vh;
-	line-height:80vh;
-	width:2.5vw;
+	top:0vh;
+	line-height:100vh;
+	width:5vw;
 	text-align: center;
 	font-size: 2.5vw;
 	cursor: pointer;
 	z-index: 5;
+	color:rgba(220,220,220,1);
 }
 
 .navs_locked {
@@ -52,7 +83,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navs:hover {
-	background-color: rgba(115,115,115,1);
+	background-color: rgba(115,115,115,.8);
 }
 
 .page_full {
@@ -75,41 +106,78 @@ h1,h2,h3,h4,h5,h6 {
 }
 #page0 {
 	background-image: url("../assets/blo.jpg");
-	background-size: 100vw auto;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#page1 {
+	background-image: url("../assets/mic.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#page2 {
+	background-image: url("../assets/extras.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#page3 {
+	background-image: url("../assets/beers.jpg");
+	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #leftPanel {
 	height: 80vh;
-	width: 45vw;
-	float:left;
-	margin:10vh 0 0 2.5vw;
+	width: 41vw;
+	float: left;
+	margin: 10vh 0 0 6vw;
 
 }
+#leftPanel p, #rightTopPanel p, #rightMiddlePanel p, #rightBottomPanel p {
+	background-color: rgba(255,255,255,.3);
+    width: -webkit-fill-available;
+    line-height: 50px;
+    padding: 4px;
+    margin: 2px;
+    cursor: pointer;
+    display: -webkit-inline-box;
+}
+#leftPanel p:hover, #rightTopPanel p:hover, #rightMiddlePanel p:hover, #rightBottomPanel p:hover {
+	background-color: rgba(255,255,255,.8);
+}
 #leftPanel,#rightTopPanel,#rightMiddlePanel,#rightBottomPanel {
-	background-color: rgba(10,10,10,.8);
-	box-shadow: 0 0 1px white inset,0 0 1px white inset,0 0 1px white inset;
+	background-color: rgba(10,10,10,0);
+	overflow-y: auto;
+
+
+
 }
 #rightTopPanel,#rightMiddlePanel,#rightBottomPanel {
-	width:45vw;
+	width:42vw;
 	height: 20vh;
 	float: right;
-	margin:10vh 2.5vw 0 0;
+	margin:10vh 6vw 0 0;
 }
 
 /* MULTI STACK */
 .page_full,.page_right,.page_left {
 	position: absolute;
-	background-color: black;
+	background-color: transparent;
 	top:0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 2;
-	box-shadow: 0 0 2px inset silver;
 }
 
 .page_full,.page_right,.page_left{
 	transition: 666ms all ease-in-out;
+	transition-delay: 1ms;
+}
+
+#page0 div {
+
 }
 /* MEDIA QUERY */
 
