@@ -159,6 +159,7 @@ footer {
     margin: 2px;
     cursor: pointer;
     display: -webkit-inline-box;
+    text-indent: 10px;
 }
 #leftPanel div div, #rightTopPanel div div, #rightMiddlePanel div div, #rightBottomPanel  div div {
 	background-color: rgba(255,255,255,0);
