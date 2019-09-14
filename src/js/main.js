@@ -4,8 +4,8 @@ var myUI, pageContent;
 pageContent = [
 	"<div><div id='leftPanel'><h1>NEWS FEED</h1><div>" + newsFeed + "</div></div><div id='rightTopPanel'><h3>LINKS</h3><div>" + links + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + joke + "</div></div><div id='rightBottomPanel'><h3>PORTAL</h3><div>" + portal + "</div></div></div>",
 	"<div><div id='leftPanel'><h1>IMAGES</h1><div>" + images + "</div></div><div id='leftPanel'><h1>VIDEOS</h1><div>" + videos + "</div></div>",
-	"",
-	""
+	"<div><div id='rightTopPanel'><h3>LINKS</h3><div>" + extras1 + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + extras2 + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + extras3 + "</div></div><div id='rightBottomPanel'><h3>PORTAL</h3><div>" + extras4 + "</div></div></div>",
+	"<div><div id='leftPanel'><h1>CREDITS</h1><div>" + credits + "</div></div>"
 ];
 
 myUI = {
@@ -16,7 +16,7 @@ myUI = {
 	init: function(){
 		myUI.load();
 	},
-	load: function(){
+	load: function(e){
 		var container = createEle("div"),
 		    navR = createEle("div"),
 		    navL = createEle("div"),
@@ -36,7 +36,7 @@ myUI = {
 				page.className = "page_full";
 				
 			}
-
+			section.className = "sections";
 			section.append(page);
 			page.innerHTML = pageContent[i];
 		}
@@ -57,6 +57,10 @@ myUI = {
 		container.append(navL,navR,section,footer);
 
 		body.append(container);
+
+		/* ---- */
+		//myUI.swiper(section, e);
+		/* ---- */
 	},
 	navLeft: function(navL,navR){
 		return function(){
