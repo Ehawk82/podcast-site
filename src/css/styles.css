@@ -152,7 +152,7 @@ footer {
 }
 
 #leftPanel p, #rightTopPanel p, #rightMiddlePanel p, #rightBottomPanel p {
-	background-color: rgba(255,255,255,.3);
+	background-color: rgba(255,255,255,.1);
     width: -webkit-fill-available;
     line-height: 50px;
     padding: 4px;
@@ -168,7 +168,7 @@ footer {
     font-size: 2vh;
     padding: 4px;
     margin: 2px;
-    display: -webkit-inline-box;
+    display: flex;
     text-align: center;
 }
 #leftPanel div div span, #rightTopPanel div div span, #rightMiddlePanel div div span, #rightBottomPanel  div div span {
@@ -178,7 +178,7 @@ footer {
     font-size: 2vh;
     padding: 0;
     margin: 0;
-    display: block;
+    display: flex;
 }
 /* MULTI STACK */
 
