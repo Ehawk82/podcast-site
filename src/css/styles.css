@@ -29,7 +29,15 @@ h1,h2,h3,h4,h5,h6 {
 	color:rgba(220,220,220,1);
 
 }
+h6 {
 
+}
+a {
+	color: grey;
+}
+a::visted {
+	color: grey;
+}
 footer {
 	position: absolute;
 	background-color: transparent;
@@ -105,6 +113,22 @@ footer {
 	left:-200vw;
 }
 
+.gplPage {
+	z-index: 9;
+	background-color: black;
+	position: fixed;
+	width: -webkit-fill-available;
+	height: 100vh;
+	top:200vh;
+}
+.gplPage_full {
+	z-index: 9;
+	background-color: black;
+	position: fixed;
+	width: -webkit-fill-available;
+	line-height: 100vh;
+	top:0;
+}
 /* ID */
 
 #navL {
@@ -171,6 +195,7 @@ footer {
     display: flex;
     text-align: center;
 }
+
 #leftPanel div div span, #rightTopPanel div div span, #rightMiddlePanel div div span, #rightBottomPanel  div div span {
 	background-color: rgba(255,255,255,0);
     width: 50%;
@@ -208,7 +233,7 @@ footer {
 	z-index: 2;
 }
 
-.page_full,.page_right,.page_left{
+.page_full,.page_right,.page_left,.gplPage,.gplPage_full {
 	transition: 666ms all ease-in-out;
 	transition-delay: 1ms;
 }
@@ -216,7 +241,7 @@ footer {
 #page0 div {
 }
 
-.navs_locked,h1,h2,h3,h4,h5,h6,footer{
+.navs_locked,h1,h2,h3,h4,h5,h6,footer,div{
 	cursor:default;
 }
 /* MEDIA QUERY */

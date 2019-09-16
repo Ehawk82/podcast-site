@@ -4,8 +4,8 @@ var myUI, pageContent;
 pageContent = [
 	"<div><div id='leftPanel'><h1>NEWS FEED</h1><div>" + newsFeed + "</div></div><div id='rightTopPanel'><h3>LINKS</h3><div>" + links + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + joke + "</div></div><div id='rightBottomPanel'><h3>PORTAL</h3><div>" + portal + "</div></div></div>",
 	"<div><div id='leftPanel'><h1>IMAGES</h1><div>" + images + "</div></div><div id='leftPanel'><h1>VIDEOS</h1><div>" + videos + "</div></div>",
-	"<div><div id='rightTopPanel'><h3>LINKS</h3><div>" + extras1 + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + extras2 + "</div></div><div id='rightMiddlePanel'><h3>JOKES</h3><div>" + extras3 + "</div></div><div id='rightBottomPanel'><h3>PORTAL</h3><div>" + extras4 + "</div></div></div>",
-	"<div><div id='leftPanel'><h1>CREDITS</h1><div>" + credits + "</div><div id='leftPanel'><h1>LICENSE</h1><div>" + license + "</div></div>"
+	"<div><div id='rightTopPanel'><h3>CLIMATE CHANGE</h3><div>" + extras1 + "</div></div><div id='rightMiddlePanel'><h3>SHOP</h3><div>" + extras2 + "</div></div><div id='rightMiddlePanel'><h3>ADVERTISING</h3><div>" + extras3 + "</div></div><div id='rightBottomPanel'><h3>PORTAL</h3><div>" + extras4 + "</div></div></div>",
+	"<div><div id='leftPanel'><h1>CREDITS</h1><div>" + credits + "</div></div><div id='rightMiddlePanel'><h3>LICENSE & PRIVACY</h3><div>" + license + "</div></div>"
 ];
 
 myUI = {
@@ -113,7 +113,6 @@ myUI = {
 				} else {
 					takeLock(navR);
 				}
-				
 			}
 		}
 	}

@@ -1,13 +1,7 @@
-extras1 = "<p>1</p>";
+extras1 = "<p>MILKWEED PROJECT</p><p>CONTRIBUTORS</p>";
 
-extras2 = "<p>2</p>";
+extras2 = "<p>CUSTOM MASKS</p><p>SPONSORED BOOKS</p>";
 
-extras3 = "<p>3</p>";
+extras3 = "<p>GAMES</p><p>JOKES</p>";
 
-extras4 = "<p>4</p>";
-
-extras5 = "<p>5</p>";
-
-extras6 = "<p>6</p>";
-
-extras7 = "<p>7</p>";
+extras4 = "<p>HOW TO MAKE SOLAR PANELS</p><p>FAVORITE SWITCHES</p><p>ATWA</p>";
