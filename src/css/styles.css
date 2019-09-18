@@ -52,7 +52,7 @@ footer {
 }
 
 ::selection { 
-	color:rgba(220,220,220,1);
+	color:inherit;
 }
 
 ::-webkit-scrollbar {
@@ -113,7 +113,7 @@ footer {
 	left:-200vw;
 }
 
-.gplPage {
+.pg {
 	z-index: 9;
 	background-color: black;
 	position: fixed;
@@ -121,13 +121,32 @@ footer {
 	height: 100vh;
 	top:200vh;
 }
-.gplPage_full {
+
+.pg_full {
 	z-index: 9;
 	background-color: black;
 	position: fixed;
 	width: -webkit-fill-available;
-	line-height: 100vh;
+	height: 100vh;
 	top:0;
+}
+
+.xOut {
+    background-color: transparent;
+    width:4vw;
+    margin: 0 auto;
+    line-height:4vw;
+    font-size: 3vw;
+    transform: rotate(-90deg);
+    color:rgba(180,180,180,1);
+
+}
+.xOut:hover {
+	color:rgba(220,220,220,1);
+}
+.pod_title {
+	background-color: transparent;
+	margin: 0 auto;
 }
 /* ID */
 
@@ -233,7 +252,7 @@ footer {
 	z-index: 2;
 }
 
-.page_full,.page_right,.page_left,.gplPage,.gplPage_full {
+.page_full,.page_right,.page_left,.pg,.pg_full {
 	transition: 666ms all ease-in-out;
 	transition-delay: 1ms;
 }
@@ -243,6 +262,9 @@ footer {
 
 .navs_locked,h1,h2,h3,h4,h5,h6,footer,div{
 	cursor:default;
+}
+.xOut{
+	cursor: pointer;
 }
 /* MEDIA QUERY */
 

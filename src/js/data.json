@@ -1,0 +1,296 @@
+dataSet = [
+	{
+		"title":"null",
+		"des":"null",
+		"items":"null"
+	},{
+		"title":"-S1E1-",
+		"des":"Season One Episode 1",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-S1E2-",
+		"des":"Season One Episode 2",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-S1E3-",
+		"des":"Season One Episode 3",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-S1E4-",
+		"des":"Season One Episode 4",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-S1E5-",
+		"des":"Season One Episode 5",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
+dataLinks = [
+	{
+		"title":"null",
+		"des":"null",
+		"items":"null"
+	},{
+		"title":"-links1-",
+		"des":"A page for external network",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-links2-",
+		"des":"A page for external network",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-links3-",
+		"des":"A page for external network",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
+dataJokes = [
+	{
+		"title":"null",
+		"des":"null",
+		"items":"null"
+	},{
+		"title":"-Joke Page 1-",
+		"des":"a bunch of jokes",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-Joke 2-",
+		"des":"a bunch of jokes",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
+dataPort = [
+	{
+		"title":"null",
+		"des":"null",
+		"items":""
+	},{
+		"title":"-Port 1-",
+		"des":"A portal of randomness",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-Port 2-",
+		"des":"A portal of randomness",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
+dataImages = [
+	{
+		"title":"null",
+		"des":"null",
+		"items":"null"
+	},{
+		"title":"-Image 1-",
+		"des":"A bunch of images",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-Image 2-",
+		"des":"another catalog of images",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
+dataVideos = [
+	{
+		"title":"null",
+		"des":"null",
+		"items":"null"
+	},{
+		"title":"-Video 1-",
+		"des":"Video data",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"-Video 2-",
+		"des":"more video data",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
+dataExtras = [
+	{
+		"title":"ATWA FOUNDATION",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"FAVORITE SWITCHES",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"HOW TO MAKE SOLAR PANELS",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"PRODUCT REVIEWS",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"GAMES",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"SPONSORED BOOKS",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"CUSTOM MASKS!",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	},{
+		"title":"CONTRIBUTORS",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+	,{
+		"title":"MILKWEED PROJECT",
+		"des":"The EXTRA stuffs",
+		"items":[
+			{
+				"item_index":"element",
+				"item_index":"element",
+				"item_index":"element"
+			}
+		]
+	}
+];
