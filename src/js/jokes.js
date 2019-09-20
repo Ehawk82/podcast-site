@@ -14,8 +14,8 @@ function runJoke(event){
 	   	description.innerHTML = dS.des;
 	   	description.className = "description";
 
-		title.className = "pod_title";
 		title.innerHTML = dS.title;
+		title.className = "pod_title";
 
 	    xOut.className = "xOut";
 	    xOut.innerHTML = "◀";

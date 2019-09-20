@@ -98,7 +98,7 @@ dataJokes = [
 		"des":"null",
 		"items":"null"
 	},{
-		"title":"-Joke Page 1-",
+		"title":"Joke 1-",
 		"des":"a bunch of jokes",
 		"items":[
 			{
@@ -108,7 +108,7 @@ dataJokes = [
 			}
 		]
 	},{
-		"title":"-Joke 2-",
+		"title":"Joke 2",
 		"des":"a bunch of jokes",
 		"items":[
 			{
@@ -125,7 +125,7 @@ dataPort = [
 		"des":"null",
 		"items":""
 	},{
-		"title":"-Port 1-",
+		"title":"Port 1",
 		"des":"A portal of randomness",
 		"items":[
 			{
@@ -135,7 +135,7 @@ dataPort = [
 			}
 		]
 	},{
-		"title":"-Port 2-",
+		"title":"Port 2",
 		"des":"A portal of randomness",
 		"items":[
 			{
@@ -152,23 +152,29 @@ dataImages = [
 		"des":"null",
 		"items":"null"
 	},{
-		"title":"-Image 1-",
-		"des":"A bunch of images",
+		"title":"General Memes",
+		"des":"",
 		"items":[
 			{
-				"item_index":"element",
-				"item_index":"element",
-				"item_index":"element"
+				"0":"./src/assets/thumbs/tried_thumb.png",
+				"1":"./src/assets/thumbs/roberto_thumb.png",
+				"2":"./src/assets/thumbs/curiosity_thumb.png",
+				"3":"./src/assets/thumbs/vaLaugh_thumb.png",
+				"4":"./src/assets/thumbs/centipede_thumb.png",
+				"5":"./src/assets/thumbs/dumb_thumb.png",
+				"6":"./src/assets/thumbs/trump_ballot_thumb.png",
+				"7":"./src/assets/thumbs/blankman_thumb.png"
+
 			}
 		]
 	},{
-		"title":"-Image 2-",
-		"des":"another catalog of images",
+		"title":"Howngrown Memes",
+		"des":"Memes made by us",
 		"items":[
 			{
-				"item_index":"element",
-				"item_index":"element",
-				"item_index":"element"
+				"0":"caption for 0",
+				"1":"caption for 1",
+				"2":"caption for 2"
 			}
 		]
 	}
@@ -179,8 +185,8 @@ dataVideos = [
 		"des":"null",
 		"items":"null"
 	},{
-		"title":"-Video 1-",
-		"des":"Video data",
+		"title":"SCIENCE",
+		"des":"a bunch of links to science videos",
 		"items":[
 			{
 				"item_index":"element",
@@ -189,8 +195,8 @@ dataVideos = [
 			}
 		]
 	},{
-		"title":"-Video 2-",
-		"des":"more video data",
+		"title":"GIF's",
+		"des":"FAVORITE GIF'S",
 		"items":[
 			{
 				"item_index":"element",
@@ -203,7 +209,7 @@ dataVideos = [
 dataExtras = [
 	{
 		"title":"ATWA FOUNDATION",
-		"des":"The EXTRA stuffs",
+		"des":"The path towards saving Terra",
 		"items":[
 			{
 				"item_index":"element",
@@ -213,7 +219,7 @@ dataExtras = [
 		]
 	},{
 		"title":"FAVORITE SWITCHES",
-		"des":"The EXTRA stuffs",
+		"des":"Analog switches are dope",
 		"items":[
 			{
 				"item_index":"element",
@@ -223,7 +229,7 @@ dataExtras = [
 		]
 	},{
 		"title":"HOW TO MAKE SOLAR PANELS",
-		"des":"The EXTRA stuffs",
+		"des":"Independent energy",
 		"items":[
 			{
 				"item_index":"element",
@@ -233,7 +239,7 @@ dataExtras = [
 		]
 	},{
 		"title":"PRODUCT REVIEWS",
-		"des":"The EXTRA stuffs",
+		"des":"A personal take on the goods",
 		"items":[
 			{
 				"item_index":"element",
@@ -243,7 +249,7 @@ dataExtras = [
 		]
 	},{
 		"title":"GAMES",
-		"des":"The EXTRA stuffs",
+		"des":"/allYourBase/",
 		"items":[
 			{
 				"item_index":"element",
@@ -253,7 +259,7 @@ dataExtras = [
 		]
 	},{
 		"title":"SPONSORED BOOKS",
-		"des":"The EXTRA stuffs",
+		"des":"We like books and you can too",
 		"items":[
 			{
 				"item_index":"element",
@@ -263,7 +269,7 @@ dataExtras = [
 		]
 	},{
 		"title":"CUSTOM MASKS!",
-		"des":"The EXTRA stuffs",
+		"des":"Homemade stuff",
 		"items":[
 			{
 				"item_index":"element",
@@ -273,7 +279,7 @@ dataExtras = [
 		]
 	},{
 		"title":"CONTRIBUTORS",
-		"des":"The EXTRA stuffs",
+		"des":"A moment to pay tribute to our people",
 		"items":[
 			{
 				"item_index":"element",
@@ -284,7 +290,7 @@ dataExtras = [
 	}
 	,{
 		"title":"MILKWEED PROJECT",
-		"des":"The EXTRA stuffs",
+		"des":"By the glory of strategic vigilante gardening, the Monarch is under our protection",
 		"items":[
 			{
 				"item_index":"element",

@@ -1,5 +1,5 @@
-var videos = "<p id='vid2' data-index-number='2' class='videos' onclick='runVideo(event)'>videos 2</p>";
-	videos += "<p id='vid1' data-index-number='1' class='videos' onclick='runVideo(event)'>videos 1</p>";
+var videos = "<p id='vid2' data-index-number='2' class='videos' onclick='runVideo(event)'>GIF's</p>";
+	videos += "<p id='vid1' data-index-number='1' class='videos' onclick='runVideo(event)'>SCIENCE</p>";
 
 function runVideo(event){
 	var pg = bySel(".pg_full") || bySel(".pg");
@@ -31,3 +31,4 @@ function runVideo(event){
 	    }, 10);
 	} else { return false }
 };
+

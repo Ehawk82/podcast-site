@@ -130,7 +130,29 @@ footer {
 	height: 100vh;
 	top:0;
 }
+.newPgContain {
+	z-index: 10;
+	background-color: black;
+	position: fixed;
+	width: -webkit-fill-available;
+	height: 100vh;
+	top:200vh;
+	left:0;
+	text-align: center;
+	padding: 5vh 0;
+}
 
+.newPgContain_full {
+	z-index: 10;
+	background-color: black;
+	position: fixed;
+	width: -webkit-fill-available;
+	height: 100vh;
+	top:0;
+	left:0;
+	text-align: center;
+	padding: 5vh 0;
+}
 .xOut {
     background-color: transparent;
     width:4vw;
@@ -147,6 +169,9 @@ footer {
 .pod_title {
 	background-color: transparent;
 	margin: 0 auto;
+}
+.myItems {
+	margin:10px 5px;
 }
 /* ID */
 
@@ -252,7 +277,7 @@ footer {
 	z-index: 2;
 }
 
-.page_full,.page_right,.page_left,.pg,.pg_full {
+.newPgContain,.newPgContain_full,.page_full,.page_right,.page_left,.pg,.pg_full,.newPg,.newPg_full {
 	transition: 666ms all ease-in-out;
 	transition-delay: 1ms;
 }
@@ -263,7 +288,7 @@ footer {
 .navs_locked,h1,h2,h3,h4,h5,h6,footer,div{
 	cursor:default;
 }
-.xOut{
+.xOut,.myItems,.newPg,.newPg_full{
 	cursor: pointer;
 }
 /* MEDIA QUERY */
